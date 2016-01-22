@@ -1,0 +1,16 @@
+.header{
+  background-image: url('../images/bg/header.jpg');
+}
+
+
+.getintouch{
+  background-image: url(../images/bg/header-2.jpg);
+}
+
+.reviews{
+  background-image: url(../images/bg/reviews.jpg);
+}
+
+.col-md-offset-1-5{
+    margin-left: 12.5%;
+}

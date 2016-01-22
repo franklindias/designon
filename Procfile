@@ -1,0 +1,1 @@
+web: gunicorn designon.wsgi --log-file -
