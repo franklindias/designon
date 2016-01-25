@@ -1,0 +1,15 @@
+## Nosso muito obrigado!!!<br/><br/>
+
+Seus dados foram:<br/>
+<b>Cliente:</b> {{nome}}<br/>
+<b>Email:</b> {{email}}<br/>
+<b>Ambiente:</b> {{ambiente}}<br/>
+<b>Serviços:</b> {{servicos}}<br/>
+<b>Tamanho:</b> {{tamanho}}<br/>
+<b>Observações:</b> {{obs}}<br/><br/>
+
+Em breve entraremos em contato com você. <br/>
+Fique de olho no seu email.<br/><br/>
+
+<h6>Se você não solicitou um orçamento, <br/>
+por favor nos envie um email para cancelar.</h6>

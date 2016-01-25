@@ -1,0 +1,10 @@
+## Novo Orçamento<br/><br/>
+
+<b>Cliente:</b> {{nome}}<br/>
+<b>Email:</b> {{email}}<br/>
+<b>Ambiente:</b> {{ambiente}}<br/>
+<b>Serviços:</b> {{servicos}}<br/>
+<b>Tamanho:</b> {{tamanho}}<br/>
+<b>Observações:</b> {{obs}}<br/><br/>
+
+Dia do pedido: {{data_solicitacao}}

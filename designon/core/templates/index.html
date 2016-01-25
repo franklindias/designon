@@ -479,7 +479,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
               <h2 class="modal-title">Insira algumas informações!</h2>
             </div>
             <div class="modal-body">
-                <form class="form-request js-ajax-form">
+                <form class="form-request js-ajax-form" method='post'>
+                 {% csrf_token %}
                   <div class="row-fields row">
                     <div class="form-group col-sm-6">
                         <input type="text" class="form-control" name="name" required placeholder="Seu Nome">
@@ -489,7 +490,6 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                       </div>
                        <div class="form-group col-sm-12">
                         <select name="tipo_ambiente" class="form-control" id="tipo_ambiente">
-                            <option value="Nenhum">Tipo de Ambiente</option>
                             <option value="Escritorio">Escritório</option>
                             <option value="Sala">Sala</option>
                             <option value="Cozinha">Cozinha</option>
@@ -504,21 +504,21 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                           <p>Quais serviços você procura?</p><br/>
                 
                 <div class="form-group col-sm-6">
-    <input type="checkbox" id='check_consultoria' name="check_consultoria" value="Consultoria"> 
+    <input type="checkbox" id='check_consultoria' name="servico" value="Consultoria"> 
     <label for="check_consultoria">Consultoria</label> <br/>
             
-    <input type="checkbox" id='check_modelagem' name="check_modelagem" value="Modelagem">
+    <input type="checkbox" id='check_modelagem' name="servico" value="Modelagem">
      <label for="check_modelagem">Modelagem 3D</label> <br/>
 
-    <input type="checkbox" id='check_planta_baixa' name="check_planta_baixa" value="Planta Baixa"> 
+    <input type="checkbox" id='check_planta_baixa' name="servico" value="Planta Baixa"> 
     <label for="check_planta_baixa">Planta Baixa</label>
                 </div>
                 
                 <div class="form-group col-sm-6">
-    <input type="checkbox" name="check_planta_iluminotecnica" id="check_planta_iluminotecnica" value="Planta Iluminotécnica"> 
+    <input type="checkbox" name="servico" id="check_planta_iluminotecnica" value="Planta Iluminotécnica"> 
     <label for="check_planta_iluminotecnica">Planta Iluminotécnica</label> <br/>
     
-    <input type="checkbox" id="check_projeto_marcenaria" name="check_projeto_marcenaria" value="Projeto de Marcenaria">
+    <input type="checkbox" id="check_projeto_marcenaria" name="servico" value="Projeto de Marcenaria">
     <label for="check_projeto_marcenaria">Projeto
                
                  de Marcenaria</label>
@@ -548,7 +548,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-	        <h2 class="modal-title">Muito obrigado pela preferência!</h2>
+	        <h2 class="modal-title">Muito obrigado!</h2>
 	        Lhe responderemos o mais rápido possível.
 	      </div>
 	    </div>
@@ -563,11 +563,15 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	        <div class="modal-header">
 	          <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
 	          <h2 class="modal-title">Desculpa</h2>
-	          Aconteceu algum erro.
+	          Aconteceu algum erro. Tente novamente.
 	        </div>
 	      </div>
 	  </div>
 	</div>
+	
+	<script>
+        
+    </script>
 
 	<!-- Scripts -->
 
