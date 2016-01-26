@@ -318,22 +318,20 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
   				</div>
 	  		</div>
 			<ul class="filter list-unstyled">
-				<li class="active"><a href="#" data-filter="*">All</a></li>
-				<li><a href="#" data-filter=".presentation">Presentation</a></li>
-				<li><a href="#" data-filter=".illustration">Illustration</a></li>
-				<li><a href="#" data-filter=".icons">Icons</a></li>
-				<li><a href="#" data-filter=".photography">Photography</a></li>
+				<li class="active"><a href="#" data-filter="*">Todos</a></li>
+				<li><a href="#" data-filter=".3d">3D/Render</a></li>
+				<li><a href="#" data-filter=".planta">Planta Baixa</a></li>
+				<li><a href="#" data-filter=".movel">Móvel Planejado</a></li>
 			</ul>
 			<div class="container-fluid">
 				<div class="row-showcase row-baseline row js-isotope">
-					<div class="col-showcase col-baseline col-sm-6 col-md-4 presentation js-isotope-item">
-						<a href="images/showcase/1.jpg" title="Coffee break">
+					<div class="col-showcase col-baseline col-sm-6 col-md-4 3d js-isotope-item">
+						<a href="{% static 'images/showcase/collage.jpg'%}" title="Escritório">
 	  						<figure>
-	  							<img alt="" src="{% static 'images/showcase/1.jpg'%}">
+	  							<img alt="" src="{% static 'images/showcase/collage.jpg'%}">
 	  							<figcaption>
 		  							<div class="wrap">
 			  							<header>
-				  							<h3>Coffee break</h3>
 			  							</header>
 		  							</div>
 	  							</figcaption>
@@ -341,65 +339,60 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						</a>
 						<span class="icon-showcase text-yellow icon icon-paperclip"></span>
 					</div>
-					<div class="col-showcase col-baseline col-sm-6 col-md-4 presentation js-isotope-item">
-						<a href="images/showcase/2.jpg" title="Glasses">
+					<div class="col-showcase col-baseline col-sm-6 col-md-4 3d js-isotope-item">
+						<a href="{% static 'images/showcase/collage_quarto1.jpg'%}" title="Quarto de Solteiro">
 	  						<figure>
-	  							<img alt="" src="images/showcase/2.jpg">
+	  							<img alt="Quarto de Solteiro" src="{% static 'images/showcase/collage_quarto1.jpg'%}">
 	  							<figcaption>
 		  							<header>
-			  							<h3>Glasses</h3>
 		  							</header>
 	  							</figcaption>
 	  						</figure>
 	  						<span class="icon-showcase text-yellow icon icon-paperclip"></span>
 						</a>
 					</div>
-					<div class="col-showcase col-baseline col-sm-6 col-md-4 illustration js-isotope-item">
-						<a href="images/showcase/3.jpg" title="Coffee">
+					<div class="col-showcase col-baseline col-sm-6 col-md-4 3d js-isotope-item">
+						<a href="{% static 'images/showcase/collage_casal.jpg'%}" title="Quarto de Casal">
 	  						<figure>
-	  							<img alt="" src="images/showcase/3.jpg">
+	  							<img alt="" src="{% static 'images/showcase/collage_casal.jpg'%}">
 	  							<figcaption>
 		  							<header>
-			  							<h3>Coffee</h3>
 		  							</header>
 	  							</figcaption>
 	  						</figure>
 	  						<span class="icon-showcase text-yellow icon icon-paperclip"></span>
 						</a>
 					</div>
-					<div class="col-showcase col-baseline col-sm-6 col-md-4 illustration js-isotope-item">
-						<a href="images/showcase/4.jpg" title="Strategy">
+					<div class="col-showcase col-baseline col-sm-6 col-md-4 3d js-isotope-item">
+						<a href="{% static 'images/showcase/collage_sala.jpg'%}" title="Sala de Estar">
 	  						<figure>
-	  							<img alt="" src="images/showcase/4.jpg">
+	  							<img alt="" src="{% static 'images/showcase/collage_sala.jpg'%}">
 	  							<figcaption>
 		  							<header>
-			  							<h3>Strategy</h3>
 		  							</header>
 	  							</figcaption>
 	  						</figure>
-  							<span class="icon-showcase text-yellow icon icon-paperclip"></span>
+	  						<span class="icon-showcase text-yellow icon icon-paperclip"></span>
 						</a>
 					</div>
-					<div class="col-showcase col-baseline col-sm-6 col-md-4 icons js-isotope-item">
-						<a href="images/showcase/5.jpg" title="Fresh">
+					<div class="col-showcase col-baseline col-sm-6 col-md-4 3d js-isotope-item">
+						<a href="{% static 'images/showcase/collage_cozinha.jpg'%}" title="Cozinha">
 	  						<figure>
-	  							<img alt="" src="images/showcase/5.jpg">
+	  							<img alt="" src="{% static 'images/showcase/collage_cozinha.jpg'%}">
 	  							<figcaption>
 		  							<header>
-			  							<h3>Fresh</h3>
 		  							</header>
 	  							</figcaption>
 	  						</figure>
-  							<span class="icon-showcase text-yellow icon icon-paperclip"></span>
+	  						<span class="icon-showcase text-yellow icon icon-paperclip"></span>
 						</a>
 					</div>
-					<div class="col-showcase col-baseline col-sm-6 col-md-4 photography js-isotope-item">
-						<a href="images/showcase/6.jpg" title="This is it">
+					<div class="col-showcase col-baseline col-sm-6 col-md-4 3d js-isotope-item">
+						<a href="{% static 'images/showcase/collage_jantar.jpg'%}" title="Sala de Jantar">
 	  						<figure>
-	  							<img alt="" src="images/showcase/6.jpg">
+	  							<img alt="" src="{% static 'images/showcase/collage_jantar.jpg'%}">
 	  							<figcaption>
 		  							<header>
-			  							<h3>This is it</h3>
 		  							</header>
 	  							</figcaption>
 	  						</figure>
