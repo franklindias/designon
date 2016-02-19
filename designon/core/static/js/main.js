@@ -1,4 +1,4 @@
-﻿( function($) {
+( function($) {
   'use strict';
 
 
@@ -195,6 +195,13 @@
        navigation : false
 
   	});
+    
+      $("#owl-demo").owlCarousel({
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+  });
 
 
 
@@ -203,88 +210,6 @@
 	-------------------------------------------------------------------------------*/
 
 
-
-  	(function(){
-		var map;
-		map = new GMaps({
-			el: '.js-gmap',
-			lat: 40.769510,
-			lng:-74.356073,
-			scrollwheel:false,
-			zoom: 14,
-			zoomControl : true,
-			panControl : false,
-			streetViewControl : false,
-			mapTypeControl: false,
-			overviewMapControl: false,
-			clickable: false
-		});
-
-
-		var image = 'images/map-marker.png';
-
-		map.addMarker({
-			lat: 40.769510,
-			lng:-74.356073,
-			icon: image,
-			animation: google.maps.Animation.DROP,
-			verticalAlign: 'bottom',
-			horizontalAlign: 'center',
-			backgroundColor: '#d3cfcf',
-			infoWindow:{
-				content: '<div class="map-info">601 Pompton Ave<br> Cedar Grove, NJ 07009</div>'
-			}
-		});
-		  
-		var styles = [ 
-
-			{
-			  "featureType": "road",
-			  "stylers": [
-				{ "color": "#422B53" }
-			  ]
-			  	},{
-			  "featureType": "landscape",
-			  "stylers": [
-				{ "color": "#2D1C3A" }
-			  ]
-				},{
-			  "featureType": "water",
-			  "stylers": [
-				{ "color": "#78588C" }
-			  ]
-			  },{
-			  "elementType": "labels.text.fill",
-			  "stylers": [
-				{ "color": "#808080" }
-			  ]
-			  },{
-			  "featureType": "poi",
-			  "stylers": [
-				{ "color": "#1D1026" }
-			  ]
-			  },{
-			  "elementType": "labels.text",
-			  "stylers": [
-				{ "saturation": 1 },
-				{ "weight": 0.1 },
-				{ "color": "#cccccc" }
-			  ]
-			}
-	  
-		];
-
-		map.addStyle({
-			styledMapName:"Styled Map",
-			styles: styles,
-			mapTypeId: "map_style"  
-		});
-
-		map.setStyle("map_style");
-		$(window).resize(function(){
-			google.maps.event.trigger(map, "resize");
-		});
-	}()); 
 
 
   	/*-------------------------------------------------------------------------------

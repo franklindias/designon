@@ -18,3 +18,16 @@
 .header-sucesso{
   background-image: url('../images/bg/header-3.jpg');
 }
+
+#prices{
+    background-color: rgba(51, 9, 78, 0.15);
+    padding-top: 60px;
+}
+
+#prices .text-muted{
+    margin-bottom: 10px;
+}
+
+#showcase{
+    padding-bottom: 30px;
+}

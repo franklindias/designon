@@ -37,6 +37,8 @@
     
     <link href="{% static 'css/demo.css' %}" rel="stylesheet">
     
+    <link href="{% static 'css/plugins.css' %}" rel="stylesheet">
+    
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     
     <!--Start of Zopim Live Chat Script-->
@@ -104,11 +106,6 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		            		</a>
 		            	</li>
 		            	<li>
-		            		<a href="#reviews" class="js-scroller">
-		            			Depoimentos
-		            		</a>
-		            	</li>
-		            	<li>
 		            		<a href="#step-by-step" class="js-scroller">
 		            			Como funciona
 		            		</a>
@@ -116,6 +113,11 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		            	<li>
 		            		<a href="#showcase" class="js-scroller">
 		            			Portifólio
+		            		</a>
+		            	</li>
+		            	<li>
+		            		<a href="#prices" class="js-scroller">
+		            			Nossos preços
 		            		</a>
 		            	</li>
 		            	<li>
@@ -132,16 +134,16 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<h1>
-							Decoração e Consultoria <br/><strong>100% Online</strong>
+							Projetos de Decoração <br/><strong>100% Online</strong>
 						</h1>
 						<p class="lead">Nunca foi tão fácil organizar seus ambientes.</p>
-						<p class="lead"><a href="#request" data-toggle="modal" class="btn">Solicite um orçamento</a></p>
+						<p class="lead"><a href="#prices" class="btn js-scroller">Confira nossos preços</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-
+    
     <!-- Content-->
 
     <main class="content">
@@ -214,8 +216,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	  				</header>
   				</div>
 				<div class="review-carousel carousel">
-					
-					
+
 					<div class="review carousel-item">
 						<div class="col-md-8 col-md-offset-2">
 							<h3 class="review-author">
@@ -242,42 +243,24 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					<div class="row-baseline row">
 		  			<div class="col-service col-baseline col-sm-6 col-md-3">
 		  				<h3 class="letter-lg media-left">1</h3>
-	  					<h3 class="service-name media-body">Solicite um Orçamento</h3>
-	  					<p class="text-muted">Insira suas informações e nos envie uma solicitação de orçamento.</p>
+	  					<h3 class="service-name media-body">Envie seus dados</h3>
+	  					<p class="text-muted">Escolha seu plano, envie suas informações, fotografe seu ambiente e nos mande suas fotos.</p>
 	  				</div>
 	  				<div class="col-service col-baseline col-sm-6 col-md-3">
 		  				<h3 class="letter-lg media-left">2</h3>
-	  					<h3 class="service-name media-body">Enviamos uma proposta</h3>
-	  					<p class="text-muted">Iremos analisar os seus dados enviados e gerar a melhor proposta para você.</p>
+	  					<h3 class="service-name media-body">Reunião</h3>
+	  					<p class="text-muted">Após a confirmação do pagamento, marcaremos uma reunião para entender melhor o seu estilo e montar um projeto a sua cara.</p>
 	  				</div>
 	  				<div class="col-service col-baseline col-sm-6 col-md-3">
 		  				<h3 class="letter-lg media-left">3</h3>
-	  					<h3 class="service-name media-body">Proposta aprovada</h3>
-	  					<p class="text-muted">Depois de sua análise em nosso orçamento, agora é só aprovar e mão na massa. </p>
+	  					<h3 class="service-name media-body">Primeira prosposta</h3>
+	  					<p class="text-muted">No prazo máximo de 20 dias úteis lhe enviaremos a primeira proposta de decoração.</p>
 	  				</div>
 	  				<div class="col-service col-baseline col-sm-6 col-md-3">
 		  				<h3 class="letter-lg media-left">4</h3>
-	  					<h3 class="service-name media-body">Reuniões pela web</h3>
-	  					<p class="text-muted">Faremos uma reunião para estabelecer os parametros do projeto. <strong>Nesse ponto vamos decidir a melhor forma de pagamento para você.</strong></p>
+	  					<h3 class="service-name media-body">Projeto Concluído</h3>
+	  					<p class="text-muted">Faremos todos os ajustes necessários, e lhe enviamos o projeto final, em imagens de alta resolução.</strong></p>
 	  				</div>
-				</div>
-                  <div class="row-baseline row">
-		  			<div class="col-service col-baseline col-sm-6 col-md-3 col-md-offset-1-5">
-		  				<h3 class="letter-lg media-left">5</h3>
-	  					<h3 class="service-name media-body">Primeira proposta de layout</h3>
-	  					<p class="text-muted">Lhe enviaremos a primeira proposta de layout do seu ambiente.</p>
-	  				</div>
-	  				<div class="col-service col-baseline col-sm-6 col-md-3">
-		  				<h3 class="letter-lg media-left">6</h3>
-	  					<h3 class="service-name media-body">Análise do cliente</h3>
-	  					<p class="text-muted">Você analise a primeira proposta e nos retorna com as melhorias e ajustes. Lembre-se: queremos que fique a sua cara.</p>
-	  				</div>
-	  				<div class="col-service col-baseline col-sm-6 col-md-3">
-		  				<h3 class="letter-lg media-left">7</h3>
-	  					<h3 class="service-name media-body">Entrega do projeto final</h3>
-	  					<p class="text-muted">Lhe entregaremos todos os serviços acordados no envio do orçamento.</p>
-	  				</div>
-
 				</div>
 				</div>
 	  		</div>
@@ -292,7 +275,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	  				<header class="text-center col-md-6 col-md-offset-3">
 	  					<span class="text-yellow icon-header icon icon-heart"></span>
 	  					<h2 class="section-title">Sua casa ou escritório do jeito que você sempre quis</h2>
-	  					<p class="lead"><a href="#request" data-toggle="modal" class="btn">Solicite um orçamento</a></p>
+	  					<p class="lead"><a href="#request" data-toggle="modal" class="btn">Confira nossos preços</a></p>
 	  				</header>
 	  			</div>
 	  		</div>
@@ -408,9 +391,158 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		</div>
 
 		<!-- Prices -->
+		
 
+<section id="prices" class="prices text-center bgc-light-gray section">
+	  		<div class="container">
+  				<div class="row">
+	  				<header class="text-center col-md-6 col-md-offset-3">
+	  					<h2 class="section-title">em qual você se encaixa?</h2>
+	  					<p class="text-muted" style="opacity:0.7;">Preços para pacote completo de decoração: planta baixa humanizada, ambiente 3D, projeto de marcenaria e planta iluminotécnica. </p>
+	  				</header>
+	  			</div>
+		  		<div class="section-content">
+		  			<div class="row-price row">
+			            <div class="col-price col-sm-6 col-md-3">
+			            	<div class="price-box">
+			              		<div class="price-body">
+			              			
+		                    		<header class="price-header price-inner">
+				                    	<div class="price">
+				                      		<strong class="price-currency">R$</strong>
+				                      		<strong class="price-amount">800</strong><span class="price-delimiter"></span>
+				                    	</div>
+				                    	<h4 class="">até 15m²</h4>
+		                    		</header>
+				                	<div class="price-inner">
+				                    	<a href="#request" data-toggle="modal" class="btn"><span>Quero esse!</span></a>
+				               		</div>
+			             		</div>
+			            	</div>
+			       		</div>
+			          	 <div class="col-price col-sm-6 col-md-3">
+			            	<div class="price-box">
+			              		<div class="price-body">
+		                    		<header class="price-header price-inner">
+				                    	<div class="price">
+				                      		<strong class="price-currency">R$</strong>
+				                      		<strong class="price-amount">1.200</strong><span class="price-delimiter"></span>
+				                    	</div>
+				                    	<h4 class="">de 15m² a 30m²</h4>
+		                    		</header>
+				                	<div class="price-inner">
+				                    	<a href="#request" data-toggle="modal" class="btn"><span>Quero esse!</span></a>
+				               		</div>
+			             		</div>
+			            	</div>
+			       		</div>
+                       <div class="col-price col-sm-6 col-md-3">
+			            	<div class="price-box">
+			              		<div class="price-body">
+		                    		<header class="price-header price-inner">
+				                    	<div class="price">
+				                      		<strong class="price-currency">R$</strong>
+				                      		<strong class="price-amount">1.900</strong><span class="price-delimiter"></span>
+				                    	</div>
+				                    	
+			              			<h4 class="">de 30m² a 50m²</h4>
+		                    		</header>
+				                	<div class="price-inner">
+				                    	<a href="#request" data-toggle="modal" class="btn"><span>Quero esse!</span></a>
+				               		</div>
+			             		</div>
+			            	</div>
+			       		</div>
+                       <div class="col-price col-sm-6 col-md-3">
+			            	<div class="price-box">
+			              		<div class="price-body">
+		                    		<header class="price-header price-inner">
+				                    	<div class="price">
+				                      		<strong class="price-currency">R$</strong>
+				                      		<strong class="price-amount">2.500</strong><span class="price-delimiter"></span>
+				                    	</div>
+			              			<h4 class="">de 50m² a 100m²</h4>
+		                    		</header>
+				                	<div class="price-inner">
+				                    	<a href="#request" data-toggle="modal" class="btn"><span>Quero esse!</span></a>
+				               		</div>
+			             		</div>
+			            	</div>
+			       		</div>
+			          	
+			          	
+			        </div>
+			        <div class="row-price row">
+			            <div class="col-price col-sm-6 col-md-3">
+			            	<div class="price-box">
+			              		<div class="price-body">
+		                    		<header class="price-header price-inner">
+				                    	<div class="price">
+				                      		<strong class="price-currency">R$</strong>
+				                      		<strong class="price-amount">3.500</strong><span class="price-delimiter"></span>
+				                    	</div>
+			              			<h4 class="">de 100m² a 150m²</h4>
+		                    		</header>
+				                	<div class="price-inner">
+				                    	<a href="#request" data-toggle="modal" class="btn"><span>Quero esse!</span></a>
+				               		</div>
+			             		</div>
+			            	</div>
+			       		</div>
+			          	 <div class="col-price col-sm-6 col-md-3">
+			            	<div class="price-box">
+			              		<div class="price-body">
+		                    		<header class="price-header price-inner">
+				                    	<div class="price">
+				                      		<strong class="price-currency">R$</strong>
+				                      		<strong class="price-amount">4.500</strong><span class="price-delimiter"></span>
+				                    	</div>
+			              			<h4 class="">de 150m² a 200m²</h4>
+		                    		</header>
+				                	<div class="price-inner">
+				                    	<a href="#request" data-toggle="modal" class="btn"><span>Quero esse!</span></a>
+				               		</div>
+			             		</div>
+			            	</div>
+			       		</div>
+                       <div class="col-price col-sm-6 col-md-3">
+			            	<div class="price-box">
+			              		<div class="price-body">
+		                    		<header class="price-header price-inner">
+				                    	<div class="price">
+				                      		<strong class="price-currency">R$</strong>
+				                      		<strong class="price-amount">5.500</strong><span class="price-delimiter"></span>
+				                    	</div>
+			              			<h4 class="">de 200m² a 250m²</h4>
+		                    		</header>
+				                	<div class="price-inner">
+				                    	<a href="#request" data-toggle="modal" class="btn"><span>Quero esse!</span></a>
+				               		</div>
+			             		</div>
+			            	</div>
+			       		</div>
+                       <div class="col-price col-sm-6 col-md-3">
+			            	<div class="price-box">
+			              		<div class="price-body">
+		                    		<header class="price-header price-inner">
+				                    	<div class="price">
+				                      		
+				                      		<strong class="price-amount"><h3>O Que você procura não está tabelado?</h3></strong><span class="price-delimiter"></span>
+				                    	</div>
+		                    		</header>
+				                	<div class="price-inner">
+				                    	<a href="#request" data-toggle="modal" class="btn btn-light-gray"><span>Fale Conosco!</span></a>
+				               		</div>
+			             		</div>
+			            	</div>
+			       		</div>
+			          	
+			          	
+			        </div>
+		  		</div>
+	  		</div>
+		</section>
 
-		<!-- Reviews -->
 
 		
 
@@ -437,8 +569,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						<div class="visible-sm clearfix"></div>
 						
 						<div class="col-baseline conctact-col col-sm-6 col-md-6">
-							<span class="icon  icon-globe"></span>
-							<p>www.designon.arq.br</p>
+							<span class="icon icon-phone"></span>
+							<p>whatsapp<br/>
+				            84 98776-9392</p>
 						</div>
 					</div>
 				</div>
@@ -452,14 +585,10 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			<div class="container">
 				<div class="row">
 					<div class="copyright col-sm-12 col-md-6">
-						Copyright © DesignOn. All Rights Reserved.
+						Copyright © DesignOn. Todos os direitos reservados.
 					</div>
 					<div class="social col-sm-12 col-md-6">
-						<a href="#" class="icon icon-twitter"></a>
-						<a href="#" class="icon icon-facebook"></a>
-						<a href="#" class="icon icon-googleplus"></a>
-						<a href="#" class="icon icon-dribbble"></a>
-						<a href="#" class="icon icon-linkedin"></a>
+						<a href="https://www.facebook.com/designon2016/" class="icon icon-facebook"></a>
 					</div>
 				</div>
 			</div>
@@ -566,10 +695,6 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	      </div>
 	  </div>
 	</div>
-	
-	<script>
-        
-    </script>
 
 	<!-- Scripts -->
 
@@ -580,6 +705,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	<script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
 	<script src="{% static 'js/imagesloaded.pkgd.js'%}"></script>
 	<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+	<script src="{% static 'js/plugins.js'%}"></script>
 	<script src="{% static 'js/jquery.validate.min.js'%}"></script>
 	<script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
 	<script src="{% static 'js/main.js'%}"></script> 
